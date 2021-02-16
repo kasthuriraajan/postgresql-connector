@@ -1,8 +1,8 @@
-# postgresql-connector
+## Module overview
 
 This module provides the functionality required to access and manipulate data stored in a PostgreSQL database.
 
-## Client
+### Client
 To access a database, you must first create a postgresql:Client object. To create a client the jdbc `connection string` for the database is mandatory. 
 
 Following is a sample usecase to use this connector. 
