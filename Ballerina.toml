@@ -1,5 +1,5 @@
 [package]
-org = "kasthuriraajan"
+org = "ballerinax"
 name = "postgresql"
 version = "0.1.0"
 

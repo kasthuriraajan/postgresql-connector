@@ -6,7 +6,7 @@
 import ballerina/io;
 import ballerina/config;
 import ballerina/sql;
-import kasthuriraajan/postgresql;
+import ballerinax/postgresql;
 
 public function main() {
     string fname = "James";
@@ -20,7 +20,7 @@ public function main() {
     io:println(insertResult);
     //Get All users from db
     getAllUser(postgresqlClient);
-    
+    checkpanic postgresqlClient.close();
 }
 
 function insertUser(postgresql:Client postgresqlClient, string fname, string lname, string country) returns sql:ExecutionResult{
